@@ -6,11 +6,11 @@
 /*   By: bbrandt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/13 13:27:51 by bbrandt           #+#    #+#             */
-/*   Updated: 2017/01/16 18:07:04 by bbrandt          ###   ########.fr       */
+/*   Updated: 2017/01/16 22:18:14 by bbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 char	*ft_free_join(char *stock, char *buff)
 {
@@ -55,9 +55,9 @@ int		get_next_line(const int fd, char **line)
 	while (!ft_strchr(stock, '\n'))
 	{
 		ret = read(fd, buff, BUFF_SIZE);
-		buff[ret] = '\0';
 		if (ret == -1)
 			return (-1);
+		buff[ret] = '\0';
 		stock = ft_free_join(stock, buff);
 		if (ret == 0 && *(stock) == '\0')
 			return (0);
