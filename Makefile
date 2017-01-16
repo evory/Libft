@@ -6,7 +6,7 @@
 #    By: bbrandt <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/10 11:59:30 by bbrandt           #+#    #+#              #
-#    Updated: 2016/11/21 18:08:13 by bbrandt          ###   ########.fr        #
+#    Updated: 2017/01/16 18:06:43 by bbrandt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,8 @@ SRC = ft_atoi.c \
 	  ft_lstadd.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
-	  ft_lstlen.c
+	  ft_lstlen.c \
+	  get_next_line.c
 
 OBJ = $(SRC:.c=.o)
 
