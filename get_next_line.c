@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbrandt <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bbrandt <bbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/13 13:27:51 by bbrandt           #+#    #+#             */
-/*   Updated: 2017/01/16 22:18:14 by bbrandt          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:12:46 by bryanbrandt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 char	*ft_free_join(char *stock, char *buff)
 {
